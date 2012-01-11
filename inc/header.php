@@ -8,7 +8,7 @@
 
 	<title>PAUL'S PLAYGROUND | HTML, CSS, JQUERY</title>
 	<meta name="description" content="...">
-	<meta name="author" content="Paul Huisman">
+	<meta name="author" content="Paul Huisman Yo">
 
 	<link media="screen" rel="stylesheet" href="css/colorbox.css" />
 	<link media="screen" rel="stylesheet" href="css/style.css" />
