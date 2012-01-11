@@ -29,7 +29,7 @@
 			
 			<div id="content" class="photos">
 				<?php
-				/*
+			
 				$phpFlickrObj = new phpFlickr('9d00e0003329e7b7c119a55d7ec2534a'); 
 				$user = $phpFlickrObj->people_findByUsername('Paul Huisman');
 				$user_url = $phpFlickrObj->urls_getUserPhotos($user['id']);
@@ -42,7 +42,7 @@
 					//$categories[$key] = $flickrset['title'] ;
 					//var_dump($flickrset);
 				} 
-				*/
+				
 				?>
 				<div id="filter">
 					<span class="filter_intro">Pick your category:</span>

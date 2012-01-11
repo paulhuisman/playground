@@ -46,9 +46,17 @@ $(function() {
 	
 	$("#photographs a").hover(function () {
 		$(this).find('.black').css('display','block');
+		$(this).append('<div class="caption">' + $(this).attr('title') + '</div>');
 	},
 	function() {
 		$(this).find('.black').css('display','none');
+		$('.caption', this).remove();
+	});
+	$("#photographs img").hover(function () {
+		$(this).append('<div class="caption">' + $(this).attr('title') + '</div>');
+	},
+	function() {
+		$('.caption', this).remove();
 	});
 	$("#filter a").click(function () {
 		 $("#filter a").removeClass();

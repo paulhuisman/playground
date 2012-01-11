@@ -159,6 +159,24 @@ input[type=password]:focus {
 	float:left;
 	margin:3px 3px 0 0;
 }
+#photographs .caption {
+	width:139px;
+	height:61px;
+	position:absolute;
+	padding:7px;
+	top:0;
+	background:#222;
+	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #222, #00);
+	/* Firefox 3.6+ */ background: -moz-linear-gradient(top, #222, #000);
+	/* IE 10 */ background: -ms-linear-gradient(top, #222, #000);
+	/* Opera 11.10+ */ background: -o-linear-gradient(top, #222, #000);
+	font-weight:bold;
+	display:block;
+	font-style:italic;
+	z-index:657;
+	color:#fff;
+	left:78px;;
+}
 #photographs .black {
 	width:75px;
 	height:75px;
