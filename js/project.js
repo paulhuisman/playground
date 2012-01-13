@@ -5,8 +5,6 @@ $(function() {
 	});
 	$("a.flickrphoto").colorbox();
 	$("a[rel='group1']").colorbox({rel:'group1'});
-	$("a[rel='group2']").colorbox({rel:'group2'});
-	$("a[rel='group3']").colorbox({rel:'group3'});
 	
 	$("a.video_popup").colorbox({ 
 		iframe:true, 
@@ -25,7 +23,6 @@ $(function() {
 		  speed: 1000,
 		  timeout: 6000,
 		  pager: '#slideshow_nav',
-
 		  after: function() {
 		  },
 	 });
@@ -43,16 +40,26 @@ $(function() {
 	});
 	
 	// photo filters + hover effect
-	$("#photographs .black").css('opacity','0.3');
+	$("#photographs .black").css('opacity','0.2');
 	
 	$("#photographs a").hover(function () {
 		$(this).find('.black').css('display','block');
-		$(this).append('<div class="caption">' + $(this).attr('title') + '</div>');
 	},
 	function() {
 		$(this).find('.black').css('display','none');
+	});
+	
+	$("#photographs a").hoverIntent(function () {
+		$(this).append('<div class="caption">' + $(this).attr('title') + '</div>');
+	},
+	function() {
 		$('.caption', this).remove();
 	});
+	
+	$("#photographs .caption").hover(function () {
+		$('.caption', this).remove();
+	});
+	
 	$("#photographs img").hover(function () {
 		$(this).append('<div class="caption">' + $(this).attr('title') + '</div>');
 	},
