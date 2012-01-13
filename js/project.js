@@ -3,6 +3,7 @@ $(function() {
 		autoHeight:false,
 		animated:'bounceslide'
 	});
+	$("a.flickrphoto").colorbox();
 	$("a[rel='group1']").colorbox({rel:'group1'});
 	$("a[rel='group2']").colorbox({rel:'group2'});
 	$("a[rel='group3']").colorbox({rel:'group3'});
