@@ -50,7 +50,7 @@ $(function() {
 	});
 	
 	$("#photographs a").hoverIntent(function () {
-		$(this).append('<div class="caption">' + $(this).attr('title') + '</div>');
+		$(this).append('<div class="caption">' + $(this).attr('alt') + '</div>');
 	},
 	function() {
 		$('.caption', this).remove();
@@ -60,21 +60,15 @@ $(function() {
 		$('.caption', this).remove();
 	});
 	
-	$("#photographs img").hover(function () {
-		$(this).append('<div class="caption">' + $(this).attr('title') + '</div>');
-	},
-	function() {
-		$('.caption', this).remove();
-	});
 	$("#filter a").click(function () {
 		 $("#filter a").removeClass();
 		 var cat =  $(this).attr('ref');
 
 		 if (cat == 'all') {
-			$("#photographs img").fadeIn('slow');
+			$("#photographs img").fadeTo('slow', '1');
 		 } else {
-			$("#photographs a." + cat + "' img").fadeIn('slow');
-			$("#photographs a:not('." + cat + "') img").fadeOut('slow');
+			$("#photographs a." + cat + "' img").fadeTo('slow', '1');
+			$("#photographs a:not('." + cat + "') img").fadeTo('slow', '0.1');
 		 }
 		 $(this).addClass('active');
 	});

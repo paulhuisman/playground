@@ -8,6 +8,10 @@ img {
 	border:none;
 	margin:0;
 }
+a {
+	color:#fff;
+	text-decoration:none;
+}
 #wrapper {
 	width:900px;
 	margin:0 auto;
@@ -152,7 +156,7 @@ input[type=password]:focus {
 }
 #photographs {
 	clear:both;
-	padding:4px 0 0 0;
+	padding:8px 0 0 0;
 }
 #photographs a {
 	width:75px;
@@ -163,28 +167,30 @@ input[type=password]:focus {
 	margin:3px 3px 0 0;
 }
 #photographs .caption {
-	width:139px;
-	height:61px;
 	position:absolute;
-	padding:7px;
-	top:0;
-	background:#222;
-	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #222, #00);
-	/* Firefox 3.6+ */ background: -moz-linear-gradient(top, #222, #000);
-	/* IE 10 */ background: -ms-linear-gradient(top, #222, #000);
-	/* Opera 11.10+ */ background: -o-linear-gradient(top, #222, #000);
-	font-weight:bold;
+	padding:5px 3px;
+	top:60px;
+	width:89px;
+	background:#272727;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align:center;
+	-webkit-box-shadow: 0px 1px 3px 0px #000;
+	-moz-box-shadow: 0px 1px 3px 0px #000;
+	box-shadow: 0px 1px 3px 0px #000; 
 	display:block;
-	font-style:italic;
 	z-index:657;
 	color:#fff;
-	left:78px;;
+	left:-10px;
+	font-size:10px;
+	text-decoration:none;
 }
 #photographs .black {
 	width:75px;
 	height:75px;
 	display:none;
-	background:#000;
+	background:#fff;
 	position:absolute;
 	top:0;
 	left:0;
