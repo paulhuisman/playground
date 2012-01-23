@@ -54,7 +54,7 @@
 					foreach ($photoset as $setkey => $setdata) {
 						foreach ($setdata['photoset']['photo'] as $photo) {
 							echo "<a class='".$setkey." flickrphoto' rel='".$setkey."' href=\"" . $phpFlickrObj->buildPhotoURL($photo, "Large") .  "\" alt='".$photo[title]."'>";  
-						 	   echo "<span class='black'></span><img rel='".$setkey."' src=\"" . $phpFlickrObj->buildPhotoURL($photo, "Square") .  "\" width=\"75\" height=\"75\" alt='".$photo[title]."' />";  
+						 	   echo "<span class='black'></span><img rel='".$setkey."' src=\"" . $phpFlickrObj->buildPhotoURL($photo, "Square") .  "\"  width=\"75\" height=\"75\" alt='".$photo[title]."' />";  
 						    echo "</a>";  
 						}
 					}

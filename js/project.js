@@ -1,4 +1,18 @@
 $(function() {
+	$( "#slider" ).slider();
+	$( "#slider" ).slider({
+		   change: function(event, ui) {
+			   var left = $(this).find('.ui-slider-handle').css('left');
+			   
+			   left = left.replace('px','');
+			   var left = left / 100;
+			   
+			   var newsize = 13 + left +'px';
+			   
+			   $('.text').css('font-size', newsize);
+		   }
+		});
+	
 	$( "#accordion" ).accordion( { 
 		autoHeight:false,
 		animated:'bounceslide'
@@ -51,6 +65,7 @@ $(function() {
 	
 	$("#photographs a").hoverIntent(function () {
 		$(this).append('<div class="caption">' + $(this).attr('alt') + '</div>');
+		
 	},
 	function() {
 		$('.caption', this).remove();
@@ -74,3 +89,5 @@ $(function() {
 	});
 	
 });
+
+

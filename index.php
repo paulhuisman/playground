@@ -38,7 +38,8 @@
 					<div id="slideshow_nav"></div>
 					
 					Donec varius nulla id magna blandit aliquam. Cras sollicitudin imperdiet risus, ut ultricies nibh dapibus sit amet. Curabitur tempus purus ut est tincidunt sodales. Pellentesque rutrum, urna sit amet adipiscing malesuada, urna felis interdum nunc, nec pellentesque velit arcu ut leo. Morbi aliquam mi vitae turpis imperdiet in consequat ante tristique. Sed eu felis justo, in euismod lectus. Sed sed tellus est. Vestibulum elementum dapibus quam, sit amet tincidunt lacus molestie ut. Phasellus eget mi urna, id dictum nisl. Vivamus vehicula faucibus rhoncus. Cras ornare pellentesque augue feugiat rhoncus. Phasellus porta suscipit lectus quis fermentum. Nam ac nulla libero, eget venenatis eros.
-				
+					<div id="slider"></div><div class="slider_text">adjust the font-size</div>
+					
 					<h2>Donec tempor tristique odio !?</h2>
 					<img src="http://images.travelpod.com/users/paulhuisman/thumbnail.uimg.paulbw2.jpg" class="side" title="Paul 2011"> 
 					Duis in mauris sem. Pellentesque habitant <a href="#">morbi tristique</a> senectus et netus et malesuada fames ac turpis egestas. Nam at nisi est. Proin placerat eros eu libero dapibus facilisis. Ut eleifend nibh in urna sollicitudin ut placerat quam pulvinar. Morbi eget ante purus, vel tincidunt libero. Praesent placerat lobortis felis. Donec ultricies vehicula vulputate. Quisque ac turpis eget diam dignissim gravida. Nunc auctor tellus mi, eu consectetur quam. Phasellus et orci dui, et tincidunt dolor. Sed pulvinar arcu ac felis ultrices vel lacinia ante ultrices. Maecenas congue, leo eget posuere vestibulum, urna risus viverra ligula, sit amet aliquam nunc nisi et mauris. Nullam tristique feugiat tempor. Nunc consequat lectus a nisi vestibulum vitae mattis risus gravida. Etiam eu ligula in eros posuere fermentum. 
