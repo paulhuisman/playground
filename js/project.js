@@ -1,5 +1,5 @@
 $(function() {
-	$( "#slider" ).slider();
+	$( "#slider" ).slider({ value: 27 });
 	$( "#slider" ).slider({
 		   change: function(event, ui) {
 			   var left = $(this).find('.ui-slider-handle').css('left');
@@ -7,7 +7,7 @@ $(function() {
 			   left = left.replace('px','');
 			   var left = left / 100;
 			   
-			   var newsize = 13 + left +'px';
+			   var newsize = 11 + left +'px';
 			   
 			   $('.text').css('font-size', newsize);
 		   }

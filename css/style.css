@@ -468,6 +468,9 @@ span.play {
 	background-position:0 -76px;
 }
 
+.clear {
+	clear:both;
+}
 /* Slider */
 #slider { margin:15px 10px 15px 0px; float:left; clear:both; }
 .ui-slider { position: relative; text-align: left; width:295px; }
