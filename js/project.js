@@ -1,16 +1,34 @@
 $(function() {
-	$( "#slider" ).slider({ value: 27 });
+	$("#editme1").editInPlace({
+		callback: function(unused, enteredText) { return enteredText; },
+		// url: 'about.php',
+		show_buttons: true,
+		bg_over: "#666"
+	});
+	$("#editme").editInPlace({
+		callback: function(unused, enteredText) { return enteredText; },
+
+		hover_class: 'input_hover',
+		field_type: "textarea",
+		show_buttons: true,
+		textarea_rows: "13",
+		textarea_cols: "37",
+		saving_image: "./img/ajax-loader.gif"
+	});
+	
 	$( "#slider" ).slider({
-		   change: function(event, ui) {
-			   var left = $(this).find('.ui-slider-handle').css('left');
-			   
-			   left = left.replace('px','');
-			   var left = left / 100;
-			   
-			   var newsize = 11 + left +'px';
-			   
-			   $('.text').css('font-size', newsize);
-		   }
+		 value: 27,
+		 change: function(event, ui) {
+		    var left = $(this).find('.ui-slider-handle').css('left');
+		   
+		    left = left.replace('px','');
+		    left = left.replace('%','');
+		    var left = left / 100;
+		   
+		    var newsize = 11 + left +'px';
+		   
+		    $('.text').css('font-size', newsize);
+		 }
 		});
 	
 	$( "#accordion" ).accordion( { 

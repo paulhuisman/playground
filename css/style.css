@@ -50,7 +50,8 @@ a {
 	float:left;
 	margin:0 11px 0 0;
 }
-
+.inplace_cancel,
+.inplace_save,
 #nav ul li a {
 	background:#303c43;
 	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #303c43, #232c31);
@@ -73,8 +74,11 @@ a {
 	border-radius: 3px; 
 	display:inline-block;
 }
+.inplace_cancel:hover,
+.inplace_save:hover,
 #nav ul li a:hover {
 	color:#e8e8e8;
+	cursor:pointer;
 	background:#404f5a;
 	/* Safari 5.1, Chrome 10+ */ background: -webkit-linear-gradient(top, #404f5a, #2e3940);
 	/* Firefox 3.6+ */ background: -moz-linear-gradient(top, #404f5a, #2e3940);
@@ -290,6 +294,38 @@ h1,h2  {
 	height:23px;
 	display:block;
 	width:242px;
+}
+/* In place editing */
+#notes {
+	width:399px;
+	font-family:monospace;
+	font-size:13px;
+	background:url('../img/notes_bg.png') no-repeat 0 0;
+	height:290px;
+	padding:86px 0 0 39px;
+	color:#111;
+	
+}
+#editme {
+	width:340px;
+	height:240px;
+	overflow:hidden;
+	line-height:117%;
+}
+.input_hover {
+	background:transparent;
+}
+textarea.inplace_field {
+	border:none;
+	background:transparent;
+	clear:both;
+	line-height:117%;
+	width:340px;
+}
+.inplace_cancel,
+.inplace_save {
+	padding:3px 10px;
+	margin:0 0 0 5px;
 }
 /*
 #sidebar h3.first.ui-accordion-header {
